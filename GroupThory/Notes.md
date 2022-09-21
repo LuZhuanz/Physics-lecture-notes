@@ -20,3 +20,13 @@
 
 >**Definition 1.1.2** Let $\sim$ be an equivalence relation on $\mathtt X$. The *equivalence class* of an element $a$ is the subset 
 >$$ [a]: =\{x \in \mathtt X: x\sim a\} \subset \mathtt X$$ 
+
+### Groups:Basic Definitions and Examples
+
+>**Definition 2.1** A group is a quartet $(G,\bf{m},\bf{I},e)$where
+>1. G is a set.
+>2. $\bf{m}: G × G \rightarrow G$ is a map, called the *group multiplication map*.
+>3. $\bf{I}: G × G \rightarrow G$  is a map, called the *inverse map*.
+>4. $e \in G$ is a distinguished element of G called the $identity element$.
+
+
