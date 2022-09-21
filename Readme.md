@@ -1,1 +1,1 @@
-# Physics Notes
+# Phyics Notes
