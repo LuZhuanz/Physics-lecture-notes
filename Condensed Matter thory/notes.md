@@ -7,15 +7,15 @@
 举例：一块典型的金属/导体可以用多体哈密顿量来描述:$H = H_e+H_i+Hei$,其中
 
 $$
-H_e = \sum _i\frac{\bf{P}^2_i}{2m}+\sum _{i<j}V_{ee}(\bf{r}_i-\bf{r}_j),
+H_e = \sum_i\frac{\bf{P}^2_i}{2m}+\sum _{i<j}V_{ee}(\bf{r}_i-\bf{r}_j),
 $$
 
 $$
-H_i = \sum _{I}\frac{\bf{P}^2_i}{2M} + \sum _{I<J}V_{ii}      (\bf {R}_I-\bf{R}_J),
+H_i = \sum_{I}\frac{\bf{P}^2_i}{2M} + \sum _{I<J}V_{ii}(\bf {R}_I-\bf{R}_J),
 $$
 
 $$
-H_{ei} = \sum _{iI}V_{ei}(\bf{R}_{I}-\bf{r}_i).
+H_{ei} = \sum_{iI}V_{ei}(\bf{R}_{I}-\bf{r}_i).
 $$
 
 $H_e,H_i$和$H_{ei}$分别表示电子、离子和电子离子之间相互作用的动力学.像上式中的哈密顿函数含有丰富的动力学信息.我们不能像通常一样从基本的问题出发来解决这种多体问题，比如把所有成分的自由度处理为相同.
@@ -31,9 +31,12 @@ $H_e,H_i$和$H_{ei}$分别表示电子、离子和电子离子之间相互作用
 
 ### 1.1 Classical harmonic chain: phonons
 
-我们将离子视为经典的粒子,并且忽略与电子的关系,有$H_e = H_ei = 0$.在绝对零度下，离子系统的热运动停止，在一维下离子的位置$R_I \equiv \overline R_I = I_a$处于一个固定的有规律的位置.对于任何对平衡位置的偏移，都会产生势能的变化.在低能下，势能函数可以写成二次形.
+我们将离子视为经典的粒子,并且忽略与电子的关系,有  $H_e = H_ei = 0$的位置$R_I \equiv \overline R_I = I_a$处于一个固定的有规律的位置.对于任何对平衡位置的偏移，都会产生势能的变化.在低能下，势能函数可以写成二次形.
 
 简化后的哈密顿量可以写为
 $$ H = \sum _{I = 1}^{N}\left[\frac{P_I^2}{2M}+\frac{k_s}{2}(R_{I+1}-R_I-a)^2 \right]$$
 与这个哈密顿量相关的拉格朗日函数为
 $$ L = T -U = \sum _{I = 1}^{N}\left[\frac{M\dot R_I^2}{2}-\frac{k_s}{2}(R_{I+1}-R_I-a)^2 \right]$$
+
+在$N$非常大的系统里，我们可以认为边界效应可以忽略，我们可以把原子链视为一个环.有边界条件$R_{N+1}=R_1$.我们假设偏离是很小的($|R_I(t)-\overline R_I|\ll a$),可以写作$R_I(t) = \overline R_I + \phi_I(t) (\phi_{N+1} = \phi_1)$,有
+$$ L = \sum_{I=1}^{N}\left[\frac{M}{2}\dot \phi^2_I - \frac{k_s}{2}(\phi_{I+1}-\phi_I)^2 \right]

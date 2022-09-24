@@ -41,7 +41,10 @@
 3. 还有很多更深的数学结构可以用来定义群.例如拓扑群，在其中的映射关系都是拓扑空间之间的连续映射.同样也可以定义李群.
 4. 通常我们用$G$来表示$(G,\bf{m},\bf{I},e)$. 
 
->**Definition 2.4** Let $G_1,G_2$ be two groups. The *direct product* of $G_1,G_2$ is the set $G_1 × G_2$ with product:
+>**Definition 2.2** Let $G_1,G_2$ be two groups. The *direct product* of $G_1,G_2$ is the set $G_1 × G_2$ with product:
 >$$ \bf{m}_{G_1×G_2}\left( (g_1,g_2),(g'_1,g'_2)\right) = (\bf{m}_{G_1} (g_1,g'_1),\bf{m}_{G_2}(g_2,g'_2)) $$
 
+>**Definition 2.3** : The *order* of a group $G$, denoted $|G|$, is the cardinality of G as a set. Roughly speaking this is the same as the “number of elements in G.” A group G is called *finite group* if $|G|< ∞ $,and is called an *infinite group* otherwise.
+
+>**Definition 2.5** When equation (2.11) $(ab = ba)$holds for two elements $a,b \in G$ we say *"a and b commute."*If a and b commute for every pair$(a,b)\in G ×G$then we say that G is an *Abelian group*.
 
