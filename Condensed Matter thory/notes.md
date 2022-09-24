@@ -4,7 +4,7 @@
 
 为了介绍场论的基本原理，我们首先考虑两个基本模型.第一个是对固体的一维近似模型(a one-dimensional “caricature” of a solid),第二个是自由传播的电磁场.
 
-举例：一块典型的金属/导体可以用多体哈密顿量来描述:$H = H_e+H_i+Hei$,其中
+举例：一块典型的金属/导体可以用多体哈密顿量来描述: $H = H_e+H_i+Hei$,其中
 
 $$
 H_e = \sum_i\frac{\bf{P}^2_i}{2m}+\sum _{i<j}V_{ee}(\bf{r}_i-\bf{r}_j),
@@ -43,4 +43,23 @@ $$L = T -U = \sum _{I = 1}^{N}\left[\frac{M\dot R_I^2}{2}-\frac{k_s}{2}(R_{I+1}-
 
 在 $N$ 非常大的系统里，我们可以认为边界效应可以忽略，我们可以把原子链视为一个环.有边界条件 $R_{N+1}=R_1$.我们假设偏离是很小的( $|R_I(t)-\overline R_I|\ll a$),可以写作 $R_I(t) = \overline R_I + \phi_I(t) (\phi_{N+1} = \phi_1)$,有
 
-$$L = \sum_{I=1}^{N}\left[\frac{M}{2}\dot \phi^2_I - \frac{k_s}{2}(\phi_{I+1}-\phi_I)^2 \right]
+$$L = \sum_{I=1}^{N}\left[\frac{M}{2}\dot \phi^2_I - \frac{k_s}{2}(\phi_{I+1}-\phi_I)^2 \right]$$
+
+在 $N$ 非常大或者趋向于无穷时，问题将会得到极大简化，这也被称为 **连续极限**(continum limit)
+
+在此极限下，可以使用泰勒展开来展开这些函数
+
+$$ \phi_I \rightarrow a^{1/2}\phi(x)|_{x=Ia}, \phi_{I+1}-\phi_I \rightarrow a^{3/2}\partial_x\phi(x)|_{x = Ia},\sum_{I=1}^N\rightarrow \frac{1}{a}\int_{0}^{L}dx,$$
+
+其中 $L = Na$ .拉格朗日函数可以写为
+
+$$ L[\phi] = \int_{0}^{L} dx \mathfrak{L} (\phi,\partial_x\phi,\dot\phi),\mathfrak{L}(\phi,\partial_x\phi,\dot\phi) = \frac{m}{2}\dot\phi^2-\frac{k_sa^2}{2}(\partial_x\phi)^2$$
+
+#### INFO
+$\phi$ 就是一种“场”.场是一个光滑的映射
+
+$$ \phi: M \rightarrow T,z \rightarrow \phi(z)$$
+
+从一个特定的流形 $M$ ,一般被称为"base manifold",映射到一个 "target" 或者 "field manifold" $T$.
+
+虽然哈密顿函数已经包含了系统的全部信息，但是我们仍然不能了解它的具体行为.为了从函数中获得准确的物理信息，我们需要得到他的运动方程(equationsn of motion).
