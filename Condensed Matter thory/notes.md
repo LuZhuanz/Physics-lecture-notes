@@ -62,4 +62,42 @@ $$ \phi: M \rightarrow T,z \rightarrow \phi(z)$$
 
 从一个特定的流形 $M$ ,一般被称为"base manifold",映射到一个 "target" 或者 "field manifold" $T$.
 
+**拉格朗日密度(Lagrangian density)** 是[能量]/[长度]的量纲.类似的,我们有连续形式的运动方程
+
+$$ S[\phi] = \int dt \,L[\phi] = \int \int_{0}^{L}dx\, \mathfrak{L}(\phi,\partial_x\phi,\dot\phi).$$
+
 虽然哈密顿函数已经包含了系统的全部信息，但是我们仍然不能了解它的具体行为.为了从函数中获得准确的物理信息，我们需要得到他的运动方程(equationsn of motion).
+
+我们让 $\phi(x,t) \rightarrow \phi(x,t) +\epsilon\eta(x,t)$ ,并且使得其展开式的第一项为0，则有
+
+$$ S[\phi+\epsilon\eta]-S[\phi] = -\int dt \int_{0}^{L} dx(m\dot\phi\dot\eta - k_sa^2\partial_x\phi\partial_x\eta) + O(\epsilon^2)$$
+
+对其分步积分，则有
+
+$$ \lim_{\epsilon \rightarrow 0} \frac{1}{\epsilon}(S[\phi +\epsilon\eta]-S[\phi])=-\int dt \int_0^Ldx(m\ddot\phi-k_sa^2\partial^2_x\phi)\eta \neq 0 $$
+
+由于是变分，积分号内为0，得到波动方程
+
+$$(m\partial^2_t - k_sa^2\partial^2_x) = 0$$
+
+这个方程的一般形式解为 $\phi_{+}(x-vt)+\phi_{-}(x+vt)$ 其中 $v = a\sqrt{k_s/m}$
+
+#### *Hamiltonian formulation*
+
+解释能量问题. 考虑拉格朗日密度,定义
+
+$$ \pi (x) \equiv \frac{\partial(\phi,\partial_x\phi, \dot\phi)}{\partial\dot\phi(x)}$$
+
+为与 $\phi$ 有关的**canonical momentum**.和 $\phi$ 一样，动量 $\pi$ 也是一个连续的自由度. 
+
+哈密顿密度由Legendre变换定义
+
+$$ H(\phi,\partial_x\phi,\pi) =\left(\pi\dot{\phi}-\mathfrak{L}(\phi,\partial_x\phi,\dot\phi) \right)\mid_{\dot{\phi}=\dot{\phi}(\phi,\pi)}$$
+
+#### EXERCISE
+
+Verify that the transition $L → H$ is a straightforward continum generalization of the Legendre transformation of the N-particle Lagrangian L($\{\phi_I\}, \{\dot\phi_I \}$).
+
+
+
+
