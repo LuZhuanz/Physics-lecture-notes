@@ -101,3 +101,31 @@ Verify that the transition $L → H$ is a straightforward continum generalizatio
 
 
 
+
+
+### 1.2 Functional analysis and variational principles
+
+$$ F[f+\epsilong]-F[f] = \epsilon\doteqDF_f[g]+ \mathfrak{O}(\epsilon^2)$$
+
+其中 $DF_f$ 为线性函数， $\epsilon$ 为小的参数.
+
+### 1.3  Maxwell’s equations as a variational principle
+
+### 1.4 Quantum chain
+
+### 1.5 Quantum electrodynamics
+
+### 1.6 Noether’s theorem
+
+### 1.7 Summary and outlook
+
+### 1.8 Problems
+
+
+## 2 Second quantization
+
+本章节介绍并应用了二次量子化的方法.这种方法支撑了多体量子力学理论.
+
+### 2.1  Introduction to second quantization
+
+我们从传统的多体量子体系开始.考虑归一化的一系列波函数 $|\lambda>$ 单粒子的哈密顿量为 $\hat{H}:\hat{H}|\lambda> = \epsilon_{\lambda}|\lambda>$
