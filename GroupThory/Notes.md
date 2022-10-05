@@ -48,3 +48,8 @@
 
 >**Definition 2.5** When equation (2.11) $(ab = ba)$holds for two elements $a,b \in G$ we say *"a and b commute."*If a and b commute for every pair$(a,b)\in G ×G$then we say that G is an *Abelian group*.
 
+>**Example 2.6** ：*The General Linear Group*
+> 令 $\ksi = \bf{R}$ 或者 $ \ksi = \bf{C} $,定义 $M_n(k)$ 为所有元素在 $\ksi$ 中的 $n×n $矩阵.
+
+
+>**Definition A** 辛矩阵(*symplectic matrix*)是一个具有以下性质的矩阵
